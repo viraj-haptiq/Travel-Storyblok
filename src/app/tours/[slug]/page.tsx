@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 import { storyblokApi } from "@/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
@@ -9,6 +8,7 @@ const fetchTourPage = async (slug: string) => {
   });
   return response.data.story;
 };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const TourPage = async (props: any) => {
   const story = await fetchTourPage(props.params.slug);
   return <StoryblokStory story={story} />;
