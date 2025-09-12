@@ -1,8 +1,8 @@
-import { StoryblokComponent } from "@storyblok/react";
+import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Grid = (params: any) => {
   return (
-    <section>
+    <section {...storyblokEditable(params.blok)}>
       <h2>{params.blok.headline}</h2>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {params.blok.items.map((blok: any) => (
