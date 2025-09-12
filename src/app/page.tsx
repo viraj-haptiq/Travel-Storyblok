@@ -1,10 +1,15 @@
 import { storyblokApi } from "@/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
+import { draftMode } from "next/headers";
 
 const fetchHomePage = async () => {
+  const { isEnabled } = await draftMode();
   const client = storyblokApi();
   const response = await client.getStory(`home`, {
-    version: "draft",
+    version:
+      process.env.NODE_ENV === "development" || isEnabled
+        ? "draft"
+        : "published",
     resolve_relations: "recommended_tours.tours",
   });
   return response.data.story;
