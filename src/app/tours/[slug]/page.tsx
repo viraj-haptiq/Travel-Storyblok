@@ -1,16 +1,15 @@
 import { storyblokApi } from "@/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
-const fetchHomePage = async () => {
+const fetchTourPage = async (slug: string) => {
   const client = storyblokApi();
-  const response = await client.getStory(`home`, {
+  const response = await client.getStory(`tours/${slug}`, {
     version: "draft",
-    resolve_relations: "recommended_tours.tours",
   });
   return response.data.story;
 };
-const HomePage = async () => {
-  const story = await fetchHomePage();
+const TourPage = async (props: any) => {
+  const story = await fetchTourPage(props.params.slug);
   return <StoryblokStory story={story} />;
 };
-export default HomePage;
+export default TourPage;
