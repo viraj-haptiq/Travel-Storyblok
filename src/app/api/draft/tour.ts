@@ -6,9 +6,6 @@ export const GET = async (request: NextRequest) => {
   const { searchParams } = new URL(request.url);
   const slug = searchParams.get("slug");
 
-  //   const { enable } = await draftMode();
-  //   enable();
-
   (await draftMode()).enable();
 
   redirect(`${slug}?${searchParams.toString()}`);
