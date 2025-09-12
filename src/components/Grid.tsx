@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 import { StoryblokComponent } from "@storyblok/react";
 
 export const Grid = (params: any) => {

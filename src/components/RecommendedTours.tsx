@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 import { RecommendedTour } from "./RecommendedTour";
 
 export const RecommendedTours = (params: any) => {

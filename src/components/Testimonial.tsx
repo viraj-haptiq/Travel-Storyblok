@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 export const Testimonial = (params: any) => {
   return (
     <div>

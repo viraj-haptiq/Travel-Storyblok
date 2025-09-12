@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 import { storyblokApi } from "@/storyblok";
 import { StoryblokStory } from "@storyblok/react/rsc";
 
