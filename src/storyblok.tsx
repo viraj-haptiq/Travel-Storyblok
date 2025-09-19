@@ -6,8 +6,6 @@ import { Grid } from "./components/Grid";
 import { Feature } from "./components/Feature";
 import { Testimonial } from "./components/Testimonial";
 import { RecommendedTours } from "./components/RecommendedTours";
-import { Faq } from "./components/Faq";
-
 export const storyblokApi = storyblokInit({
   components: {
     tour: Tour,
@@ -17,7 +15,6 @@ export const storyblokApi = storyblokInit({
     feature: Feature,
     testimonial: Testimonial,
     recommended_tours: RecommendedTours,
-    faq: Faq,
   },
   accessToken: process.env.STORYBLOK_TOKEN,
   use: [apiPlugin],
