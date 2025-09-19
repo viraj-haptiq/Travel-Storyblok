@@ -1,0 +1,94 @@
+[33mcommit 8dd14656062b80cbe71cf290df45005be365bc68[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 19 12:48:31 2025 +0530
+
+    Revert "complete assignment 1"
+    
+    This reverts commit cb9f7e7c4d4b34ca11c5769d26b05225a2a606e6.
+
+[33mcommit cb9f7e7c4d4b34ca11c5769d26b05225a2a606e6[m[33m ([m[1;31morigin/ASS-01[m[33m, [m[1;32mASS-1[m[33m, [m[1;32mASS-01[m[33m)[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 19 11:44:28 2025 +0530
+
+    complete assignment 1
+
+[33mcommit 30452efac84a4b8df521c648bdd627c720e54e31[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Thu Sep 18 19:56:41 2025 +0530
+
+    task 1
+
+[33mcommit 523c15e6762d77a68677c448efaa6eb0844df28d[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Thu Sep 18 11:56:31 2025 +0530
+
+    add faq data modelling
+
+[33mcommit eccc75efc67efcf52babff6be476778994469ab8[m
+Merge: f139a20 72e6bea
+Author: Viraj Yanpure <viraj.yanpure@haptiq.com>
+Date:   Wed Sep 17 23:17:18 2025 +0530
+
+    Merge pull request #1 from viraj-haptiq/test
+    
+    remove extra line
+
+[33mcommit 72e6bea022a5e7619d4bcfdf9c14fe5e3e1c85fe[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Wed Sep 17 23:14:41 2025 +0530
+
+    remove extra line
+
+[33mcommit f139a20a56f1ca6c33bfce743d61ca64ff7a1067[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 17:54:03 2025 +0530
+
+    making blocks editable
+
+[33mcommit 4c1ca83eae44af7d14ed6931b5d94d0eaaf7b912[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 17:29:28 2025 +0530
+
+    draft mode
+
+[33mcommit cd3e32793793d264cb3e09ebf1fc20bd8cdc9c4c[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 16:00:41 2025 +0530
+
+    folder structure error of api/draft name issue
+
+[33mcommit 2b9884adf84a1dc91911a000ed02d3eb07b74a8e[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 15:56:47 2025 +0530
+
+    folder structure error of api/draft
+
+[33mcommit a538bc3957c401115dd9ca2179cba7540d655698[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 15:45:54 2025 +0530
+
+    visual editor set up error
+
+[33mcommit 16c0dae7eec21a7384e8757a0f6e297c06593684[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 14:35:08 2025 +0530
+
+    fixed eslint bug
+
+[33mcommit 30f52cf43c46669020e5c1cb55a118d1d931d09a[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 14:24:57 2025 +0530
+
+    eslint any bug fix
+
+[33mcommit c8d22eb34b0e62e4bb1303f4a6a80ca8ed8aafff[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Fri Sep 12 14:03:20 2025 +0530
+
+    initial commit
+
+[33mcommit 9f0a11f1e72ac4a80291f56192b2e990ca268feb[m
+Author: viraj-haptiq <viraj.yanpure@haptiq.com>
+Date:   Sun Sep 7 21:19:01 2025 +0530
+
+    Initial commit from Create Next App
