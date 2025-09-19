@@ -17,7 +17,7 @@ export const storyblokApi = storyblokInit({
     feature: Feature,
     testimonial: Testimonial,
     recommended_tours: RecommendedTours,
-    faq_section: Faq,
+    faq: Faq,
   },
   accessToken: process.env.STORYBLOK_TOKEN,
   use: [apiPlugin],

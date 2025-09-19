@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Titillium_Web } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { storyblokInit } from "@storyblok/react/rsc";
 import { StoryblokProvider } from "@/components/StoryblokProvider";
@@ -11,11 +11,6 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const titilliumWeb = Titillium_Web({
-  weight: ["200", "300", "400", "600", "700", "900"],
   subsets: ["latin"],
 });
 
@@ -33,8 +28,10 @@ export default function RootLayout({
   return (
     <StoryblokProvider>
       <html lang="en">
-        <body className={`${titilliumWeb.className}`}>
-          <div>LAYOUT</div>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <div>layout</div>
           {children}
         </body>
       </html>
