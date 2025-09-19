@@ -1,17 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import {
-  storyblokEditable,
-  renderRichText,
-  SbBlokData,
-} from "@storyblok/react";
+import { storyblokEditable, renderRichText } from "@storyblok/react";
 
-export interface FaqItemBlok extends SbBlokData {
+export interface FaqItemBlok {
   _uid: string;
-  _editable?: string;
   question: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   answer: any;
   component: "faq";
 }
@@ -27,13 +21,13 @@ export const InteractiveFaq = ({ items }: { items: FaqItemBlok[] }) => {
     <div>
       {items.map((faqItem, index) => {
         const isActive = activeIndex === index;
-        const renderedAnswer = renderRichText(faqItem.answer) as string;
+        const renderedAnswer = renderRichText(faqItem.answer);
 
         return (
           <div
             key={faqItem._uid}
             {...storyblokEditable(faqItem)}
-            className="mb-4 border-b border-border"
+            className="mb-4 border-b border-gray-200"
           >
             <header
               className="flex justify-between items-center cursor-pointer gap-4 mb-4"
@@ -43,7 +37,7 @@ export const InteractiveFaq = ({ items }: { items: FaqItemBlok[] }) => {
                 {faqItem.question}
               </h3>
               <span className="text-2xl font-normal text-black ">
-                {isActive ? "-" : "+"}
+                {isActive ? "−" : "+"}
               </span>
             </header>
 
