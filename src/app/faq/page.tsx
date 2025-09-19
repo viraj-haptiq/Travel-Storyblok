@@ -3,11 +3,8 @@ import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
 import { storyblokApi } from "@/storyblok";
 
-/**
- * Fetches the content for the FAQ page from Storyblok.
- */
 async function fetchFaqPage() {
-  const { isEnabled } = draftMode();
+  const { isEnabled } = await draftMode();
   const client = storyblokApi();
 
   const version =
@@ -17,13 +14,12 @@ async function fetchFaqPage() {
     const { data } = await client.get(`cdn/stories/faq`, { version });
     return data.story;
   } catch (error) {
+    console.error("Failed to fetch FAQ page:", error);
+
     return null;
   }
 }
 
-/**
- * The FAQ Page component.
- */
 export default async function FaqPage() {
   const story = await fetchFaqPage();
 
